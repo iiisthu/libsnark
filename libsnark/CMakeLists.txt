@@ -64,8 +64,6 @@ install(
   FILES_MATCHING
   PATTERN "*.hpp"
   PATTERN "*.tcc"
-  PATTERN "tests" EXCLUDE
-  PATTERN "examples" EXCLUDE
 )
 
 install(
