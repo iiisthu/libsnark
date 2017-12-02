@@ -40,6 +40,8 @@ add_library(
   relations/ram_computations/memory/ra_memory.cpp
   relations/ram_computations/rams/fooram/fooram_aux.cpp
   relations/ram_computations/rams/tinyram/tinyram_aux.cpp
+  interface/jsnark/Util.cpp
+  interface/jsnark/CircuitReader.cpp
 )
 target_link_libraries(
   snark
@@ -92,6 +94,19 @@ if("${WITH_SUPERCOP}")
     DESTINATION lib
   )
 endif()
+# Interfaces
+
+add_executable(
+  interface_jsnark
+
+  interface/jsnark/interface_jsnark.cpp
+)
+target_link_libraries(
+  interface_jsnark
+
+  snark
+  ff
+)
 
 # Demos
 add_executable(

@@ -247,3 +247,4 @@ add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND})
 
 add_subdirectory(depends)
 add_subdirectory(libsnark)
+add_subdirectory(depends/libfqfft/libfqfft)
