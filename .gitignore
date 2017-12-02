@@ -2,6 +2,8 @@
 *.a
 *.so
 *.d
+.idea/
+cmake-build-debug/
 depinst/
 depsrc/
 README.html
